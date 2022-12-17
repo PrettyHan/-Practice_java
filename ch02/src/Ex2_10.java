@@ -1,14 +1,16 @@
-import java.util.Scanner;    // Scanner¸¦ »ç¿ëÇÏ±â À§ÇØ Ãß°¡
+import java.util.Scanner;    // Scannerï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
 
 class Ex2_10 { 
 	public static void main(String[] args) { 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("µÎÀÚ¸® Á¤¼ö¸¦ ÇÏ³ª ÀÔ·ÂÇØÁÖ¼¼¿ä.>");
+		System.out.print("ì…ë ¥í•´ì£¼ì„¸ìš”>");
 		String input = scanner.nextLine();
-		int num = Integer.parseInt(input); // ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯
+		String input2 = scanner.nextLine();
+		int num = Integer.parseInt(input); // ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½ï¿½È¯
+		int num2 = Integer.parseInt(input2); // ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½ï¿½È¯
 
-		System.out.println("ÀÔ·Â³»¿ë :"+input);
-		System.out.printf("num=%d%n", num);
+		System.out.println("ì…ë ¥ëœ ê°’:"+input);
+		System.out.printf("num=%d%nnum2=%d", num, num2);
 	} 
 }
