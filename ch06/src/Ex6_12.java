@@ -1,27 +1,31 @@
 class Car {
-	String color;		// »ö»ó
-	String gearType;	// º¯¼Ó±â Á¾·ù - auto(ÀÚµ¿), manual(¼öµ¿)
-	int door;			// ¹®ÀÇ °³¼ö
-
-	Car() {}
+	String color;		// ï¿½ï¿½ï¿½ï¿½
+	String gearType;	// ï¿½ï¿½ï¿½Ó±ï¿½ ï¿½ï¿½ï¿½ï¿½ - auto(ï¿½Úµï¿½), manual(ï¿½ï¿½ï¿½ï¿½)
+	int door;			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	int check;
+	
+	Car() {
+		this("red", "blue", 19);
+		check = 19;
+	}
 
 	Car(String c, String g, int d) {
 		color = c;
 		gearType = g;
 		door = d;
+		check = 2;
 	}
 }
 
 class Ex6_12 {
 	public static void main(String[] args) {
 		Car c1 = new Car();
-		c1.color    = "white";
-		c1.gearType = "auto";
-		c1.door = 4;
 
 		Car c2 = new Car("white", "auto", 4);
 
-		System.out.println("c1ÀÇ color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
-		System.out.println("c2ÀÇ color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
+		System.out.println("c1ï¿½ï¿½ color=" + c1.color + ", gearType=" + c1.gearType+ ", door="+c1.door);
+		System.out.println("c2ï¿½ï¿½ color=" + c2.color + ", gearType=" + c2.gearType+ ", door="+c2.door);
+		System.out.println(c1.check);
+		System.out.println(c2.check);
 	}
 }

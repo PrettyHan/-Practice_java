@@ -1,22 +1,21 @@
-import java.util.Arrays;  // Arrays.toString()À» »ç¿ëÇÏ±â À§ÇØ Ãß°¡
+import java.util.Arrays;
 
 class Ex5_1 {
 	public static void main(String[] args) {
 		int[] iArr1 = new int[10];
 		int[] iArr2 = new int[10];
-//		int[] iArr3 = new int[]{100, 95, 80, 70, 60};
 		int[] iArr3 = {100, 95, 80, 70, 60};
 		char[] chArr = {'a', 'b', 'c', 'd'};
 
 		for (int i=0; i < iArr1.length ; i++ ) {
-			iArr1[i] = i + 1; // 1~10ÀÇ ¼ýÀÚ¸¦ ¼ø¼­´ë·Î ¹è¿­¿¡ ³Ö´Â´Ù.
+			iArr1[i] = i + 1; // 1~10ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½Ö´Â´ï¿½.
 		}
 
 		for (int i=0; i < iArr2.length ; i++ ) {
-			iArr2[i] = (int)(Math.random()*10) + 1; // 1~10ÀÇ °ªÀ» ¹è¿­¿¡ ÀúÀå
+			iArr2[i] = (int)(Math.random()*10) + 1; // 1~10ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		}
 
-		// ¹è¿­¿¡ ÀúÀåµÈ °ªµéÀ» Ãâ·ÂÇÑ´Ù.
+		// ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
 		for(int i=0; i < iArr1.length;i++) {
 			System.out.print(iArr1[i]+",");	
 		}
