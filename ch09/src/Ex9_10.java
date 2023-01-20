@@ -1,16 +1,16 @@
 class Ex9_10 {
 	public static void main(String[] args) {
 		int iVal = 100;
-		String strVal = String.valueOf(iVal); // int¸¦ StringÀ¸·Î º¯È¯ÇÑ´Ù.
+		String strVal = String.valueOf(iVal); // intï¿½ï¿½ Stringï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
 		
 		double dVal = 200.0;
-		String strVal2 = dVal + "";	// int¸¦ StringÀ¸·Î º¯È¯ÇÏ´Â ¶Ç ´Ù¸¥ ¹æ¹ý
+		String strVal2 = dVal + "";	// intï¿½ï¿½ Stringï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½
 
 		double sum  = Integer.parseInt("+"+strVal)
                                           + Double.parseDouble(strVal2);
 		double sum2 = Integer.valueOf(strVal) + Double.valueOf(strVal2);
 		
-		System.out.println(String.join("",strVal,"+",strVal2,"=")+sum);
+		System.out.println(String.join(strVal,"+",strVal2,"=")+sum);
 		System.out.println(strVal+"+"+strVal2+"="+sum2);
 	}
 }
